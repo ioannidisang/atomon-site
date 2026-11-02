@@ -1,0 +1,20 @@
+html { color-scheme: light; }
+body {
+  margin: 0;
+  color: #2A1E3B;
+  background: #FBF7F2;
+  font-family: Georgia, "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  line-height: 1.5;
+}
+header, main, footer { max-width: 42rem; margin: 0 auto; padding: 1.25rem 1.25rem 0; }
+footer { padding-bottom: 3rem; color: #5E5470; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0.5rem 0; }
+h2 { font-size: 1.25rem; margin: 1.75rem 0 0.4rem; }
+p { margin: 0.6rem 0; }
+a { color: #4E32C8; }
+.brand { font-weight: 700; margin: 0; }
+.langs { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; margin-top: 0.75rem; }
+.langs a { min-height: 44px; display: inline-flex; align-items: center; }
+.note { font-weight: 700; }
+.updated { color: #5E5470; }
+nav a[aria-current="page"] { font-weight: 700; }
