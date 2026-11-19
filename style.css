@@ -11,6 +11,7 @@ ul.apps{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
 ul.apps li{padding:16px 0;border-bottom:1px solid var(--line)}
 ul.apps strong{display:block;font-size:1.05rem}
 .links{font-size:.92rem}
+p.links{clear:both}
 .lang{float:right;font-size:.9rem}
 dl.company{margin:0;border-top:1px solid var(--line)}
 dl.company div{padding:10px 0;border-bottom:1px solid var(--line)}
@@ -18,3 +19,37 @@ dl.company dt{margin:0;color:var(--muted);font-size:.85rem}
 dl.company dd{margin:0}
 footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
 article h2{margin-top:28px}
+
+/* Company home and product pages. Legal pages do not use these classes. */
+.skip{position:absolute;left:-999px;top:8px}
+.skip:focus{left:12px;z-index:2;background:#fff;padding:8px 12px;border-radius:8px}
+.site-header{border-bottom:1px solid var(--line);background:var(--bg)}
+.site-header-inner{max-width:880px;margin:0 auto;padding:12px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 20px}
+.site-brand{color:var(--fg);font-weight:600;letter-spacing:-.02em;font-size:1.05rem}
+.site-brand:hover{text-decoration:none}
+.site-nav{display:flex;flex-wrap:wrap;gap:0 16px}
+.site-nav a{color:var(--fg);font-size:.92rem;display:inline-flex;align-items:center;min-height:44px}
+.site-nav a[aria-current="page"]{color:var(--accent);font-weight:600}
+body.company main{max-width:880px;padding-top:36px}
+body.company h1{font-size:clamp(1.85rem,4vw,2.6rem);line-height:1.15;letter-spacing:-.03em;max-width:18em}
+.lede{font-size:1.125rem;max-width:42rem}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 4px}
+body.company a.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 16px;border-radius:999px;background:var(--accent);color:#fff;font-weight:600;text-align:center;max-width:100%}
+body.company a.button:hover{text-decoration:none;background:#2f4cc0}
+body.company a.button.secondary{background:transparent;color:var(--accent);box-shadow:inset 0 0 0 1px var(--line)}
+body.company a.button.secondary:hover{background:#f3f4fb;text-decoration:none}
+.cards{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:1fr;gap:12px}
+.cards li{border:1px solid var(--line);border-radius:12px;padding:18px 18px 6px;background:#fff}
+.cards h3{margin:0 0 8px;font-size:1.05rem}
+.features{display:grid;grid-template-columns:1fr;gap:0 28px;margin:4px 0 0}
+.features article{border-top:1px solid var(--line);padding:14px 0 2px}
+.features h3{margin:0 0 4px;font-size:1.02rem}
+.status{margin:20px 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.steps{margin:8px 0 0;padding-left:1.25rem}
+.steps li{margin:0 0 10px}
+body.company .site-footer{max-width:880px;margin:8px auto 0;padding:28px 20px 64px;border-top:1px solid var(--line)}
+body.company a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (min-width:720px){
+  .cards{grid-template-columns:1fr 1fr}
+  .features{grid-template-columns:1fr 1fr}
+}
