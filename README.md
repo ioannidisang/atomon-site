@@ -25,5 +25,5 @@ Legal pages are unchanged:
 ## Still to fill in
 
 - Idolingo, Shopify Avatar, and the AI e-shop builder use labeled placeholder images. Replace `media/<project>/hero.webp` and `og/<project>.jpg` with a real screenshot. A loop can be added as `media/<project>/loop.mp4` on a `video[data-mp4]`, same pattern as Maylo.
-- The Mr Atlas **app** has no screenshot and no store URL. Channel frames are in `media/mr-atlas/`. Store links are a `TODO(store)` comment in `mr-atlas/index.html`.
+- The Mr Atlas **app** screens are in `media/mr-atlas/`. It is still under development, with no store URL. Store links are a `TODO(store)` comment in `mr-atlas/index.html`. The YouTube channel link stays on the page.
 - Rise of Civs visuals are prototype stills. The 3D villager model needs a licence check before this is merged.
