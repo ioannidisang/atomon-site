@@ -203,6 +203,18 @@ a:hover { color: var(--sun); }
 }
 .founder h3 a { text-decoration: none; }
 .founder p { margin: 10px 0 0; color: var(--muted); }
+.founder p a { color: var(--cream); }
+
+.social { margin: 8px 0 0; }
+.social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.social svg { display: block; flex: none; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
 .chip {
@@ -344,6 +356,8 @@ a:hover { color: var(--sun); }
   .gallery.phones { grid-template-columns: repeat(4, 1fr); }
   .gallery.pair { grid-template-columns: 1fr 1fr 0.7fr; align-items: start; }
   .gallery.slots { grid-template-columns: repeat(3, 1fr); }
+  .gallery.shots { grid-template-columns: 1fr 1fr; }
+  .gallery.shots .shot:last-child { max-width: 280px; justify-self: start; }
 }
 @media (min-width: 1040px) {
   .work-grid { grid-template-columns: 1fr 1fr 1fr; }
