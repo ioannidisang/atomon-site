@@ -358,6 +358,7 @@ a:hover { color: var(--sun); }
   .gallery.slots { grid-template-columns: repeat(3, 1fr); }
   .gallery.shots { grid-template-columns: 1fr 1fr; }
   .gallery.shots .shot:last-child { max-width: 280px; justify-self: start; }
+  .gallery.shots.builder .shot:last-child { max-width: none; justify-self: stretch; }
 }
 @media (min-width: 1040px) {
   .work-grid { grid-template-columns: 1fr 1fr 1fr; }
