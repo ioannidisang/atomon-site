@@ -193,6 +193,17 @@ a:hover { color: var(--sun); }
 .pub { margin: 8px 0 0; color: var(--muted); font-size: 0.86rem; }
 .pub a { color: var(--cream); }
 
+.founder { max-width: 40rem; }
+.founder h3 {
+  font-family: var(--display);
+  font-size: clamp(1.55rem, 3vw, 2.05rem);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin: 0;
+}
+.founder h3 a { text-decoration: none; }
+.founder p { margin: 10px 0 0; color: var(--muted); }
+
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; }
 .chip {
   display: inline-flex;
@@ -327,6 +338,7 @@ a:hover { color: var(--sun); }
 }
 @media (min-width: 720px) {
   .work-grid { grid-template-columns: 1fr 1fr; }
+  .products-grid { grid-template-columns: 1fr 1fr; }
   .facts { grid-template-columns: 1fr 1fr; }
   .facts div:nth-child(odd) { padding-right: 24px; }
   .gallery.phones { grid-template-columns: repeat(4, 1fr); }
@@ -335,6 +347,7 @@ a:hover { color: var(--sun); }
 }
 @media (min-width: 1040px) {
   .work-grid { grid-template-columns: 1fr 1fr 1fr; }
+  .products-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {
